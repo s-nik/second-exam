@@ -1,0 +1,14 @@
+.bg-heart {
+    width: 41px; height: 35px;
+    background: url('css_sprites.png') -67px -10px;
+}
+
+.bg-book {
+    width: 37px; height: 41px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-master {
+    width: 35px; height: 40px;
+    background: url('css_sprites.png') -128px -10px;
+}

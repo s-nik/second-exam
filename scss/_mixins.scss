@@ -1,0 +1,27 @@
+@mixin tr {
+	transition: all .4s linear;
+}
+
+@mixin myPos($top: 50%, $left: 50%, $tx: -50%, $ty: -50%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	transform: translate($tx, $ty);
+}
+
+@mixin align ($content: space-between) {
+	justify-content: $content;
+}
+
+@mixin td {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin dl {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+}

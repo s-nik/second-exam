@@ -1,0 +1,84 @@
+.bg-logo_constract {
+    width: 76px; height: 65px;
+    background: url('css_sprites.png') -100px -356px;
+}
+
+.bg-logo_design {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -10px -151px;
+}
+
+.bg-logo_elearn {
+    width: 51px; height: 51px;
+    background: url('css_sprites.png') -484px -82px;
+}
+
+.bg-logo_family {
+    width: 121px; height: 121px;
+    background: url('css_sprites.png') -180px -10px;
+}
+
+.bg-logo_giftbox {
+    width: 52px; height: 52px;
+    background: url('css_sprites.png') -484px -10px;
+}
+
+.bg-logo_java {
+    width: 114px; height: 61px;
+    background: url('css_sprites.png') -321px -169px;
+}
+
+.bg-logo_kodu {
+    width: 114px; height: 67px;
+    background: url('css_sprites.png') -321px -82px;
+}
+
+.bg-logo_minecraft {
+    width: 126px; height: 22px;
+    background: url('css_sprites.png') -153px -290px;
+}
+
+.bg-logo_python {
+    width: 123px; height: 46px;
+    background: url('css_sprites.png') -10px -290px;
+}
+
+.bg-logo_rob {
+    width: 118px; height: 118px;
+    background: url('css_sprites.png') -149px -151px;
+}
+
+.bg-logo_roblex {
+    width: 124px; height: 22px;
+    background: url('css_sprites.png') -299px -290px;
+}
+
+.bg-logo_smartphone {
+    width: 41px; height: 54px;
+    background: url('css_sprites.png') -484px -153px;
+}
+
+.bg-logo_unity {
+    width: 143px; height: 52px;
+    background: url('css_sprites.png') -321px -10px;
+}
+
+.bg-logo_unreal {
+    width: 70px; height: 73px;
+    background: url('css_sprites.png') -10px -356px;
+}
+
+.bg-logo_yt {
+    width: 150px; height: 121px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-logo_3ds {
+    width: 108px; height: 23px;
+    background: url('css_sprites.png') -196px -356px;
+}
+
+.bg-logo_3dmaya {
+    width: 117px; height: 19px;
+    background: url('css_sprites.png') -321px -250px;
+}

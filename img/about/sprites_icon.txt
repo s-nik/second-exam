@@ -1,0 +1,14 @@
+.bg-emotions {
+    width: 88px; height: 82px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-intel {
+    width: 76px; height: 89px;
+    background: url('css_sprites.png') -118px -10px;
+}
+
+.bg-study {
+    width: 71px; height: 96px;
+    background: url('css_sprites.png') -10px -112px;
+}
