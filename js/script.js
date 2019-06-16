@@ -63,7 +63,7 @@ function initMap() {
     position: center,
     animation: google.maps.Animation.DROP,
     map: map,
-    icon: '../img/icon.png'
+    icon: '../img/marker.ico'
   });
 
   marker.addListener('click', function () {
