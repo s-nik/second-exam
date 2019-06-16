@@ -231,6 +231,8 @@ body {
 		@include align;
 		list-style: none;
 		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	&__link {
 		@include td;
@@ -274,6 +276,8 @@ body {
 	&__choose {
 		@include align($content: space-around);
 		color: #fff;
+		display: flex;
+		flex-wrap: wrap;
 		> .navbar__link {
 			@include tr;
 			&:hover,
@@ -372,12 +376,14 @@ body {
 	}
 	&__extension {
 		min-height: 330px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	&__extension {
 		@include align($content: center);
 	}
 	&__e-text {
-		padding-left: 120px;
+		padding-left: 20px;
 		margin: auto;
 		text-transform: uppercase;
 		font-size: 2rem;
@@ -385,24 +391,16 @@ body {
 		color: $text-color;
 		line-height: 1.2;
 		vertical-align: middle;
-		&::before{
-			content: '';
+		& > p {
 			display: inline-block;
-			width: 88px; 
-			height: 82px;
-			position: relative;
-			@include myPos($left: 60px);
-    		background: url('../img/about/sprites_icon.png') -10px -10px;
+			height: 100%;
+			vertical-align: middle;
+			max-width: 70%;
+			padding-left: 10px;
+			margin-bottom: 0;
 		}
-		&:nth-of-type(2):before {
-			width: 76px;
-			height: 89px;
-			background: url('../img/about/sprites_icon.png') -118px -10px;
-		}
-		&:nth-of-type(3):before {
-			width: 71px; 
-			height: 96px;
-			background: url('../img/about/sprites_icon.png') -10px -112px;
+		& > img {
+			max-width: 20%;
 		}
 	}
 }
@@ -434,6 +432,8 @@ body {
 	}
 	&__descriptions {
 		@include align;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	&__s-text {
 		font-size: 1.4rem;
@@ -465,8 +465,9 @@ body {
 			border-radius: 10px;
 			overflow: hidden;
 		}
-		&--purp:first-of-type {
+		&:hover:first-of-type {
 			border-color: $purple;
+			@include tr;
 			&>.why__s-text:before {
 			background-color: $purple;
 			}
@@ -518,6 +519,8 @@ body {
 	}
 	&__stat{
 		align-items: baseline;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	&__image {
 		text-align: center;
@@ -574,11 +577,8 @@ body {
 	}
 }
 
-.section__study {
-	padding-bottom: 120px;
-}
-
 .study {
+	padding-bottom: 120px;
 	&__offer {
 		align-items: flex-start;
 	}
@@ -668,6 +668,8 @@ body {
 		height: 90px;
 		align-items: center;
 		position: relative;
+		display: flex;
+		flex-wrap: wrap;
 		&--base {
 			align-items: baseline;
 		}
@@ -706,6 +708,7 @@ body {
 	&__s-wrap {
 		@include align;
 		margin-bottom: 10px;
+		display: flex;
 	}
 	&__block-text {
 		text-transform: uppercase;
@@ -885,6 +888,8 @@ body {
 		@include align(space-around);
 		align-items: center;
 		position: relative;
+		display: flex;
+		flex-wrap: wrap;
 		&:after {
 			content: "";
 			display: inline-block;
@@ -948,6 +953,8 @@ body {
 	flex-direction: column;
 	padding: 20px;
 	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
 	&__title {
 		font-size: 2.2rem;
 		font-weight: bold;
@@ -1059,11 +1066,12 @@ body {
 			font-size: 1.4rem;
 			margin-bottom: 1rem;
 		}
-		&>tel {
+		&>a {
 			font-weight: bold;
 			font-size: 1.4rem;
 			margin-bottom: 1rem;
 			display: inline-block;
+			color: #fff;
 		}
 		&:not(:nth-last-of-type(1))::after {
 			content: "";
@@ -1127,7 +1135,7 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		position: relative;
-		transform: translate(10px, 5px);
+		transform: translate(22px, 5px);
 		}
 	}
 	&__tel {
@@ -1138,13 +1146,18 @@ body {
 		@include align(flex-end);
 		margin-bottom: 10px;
 		padding: 0 25px;
-		& > tel {
+		display: flex;
+		flex-wrap: wrap;
+		& > a {
 			display: block;
 			width: 115px;
 			text-align: left;
+			color: #fff;
 		}
 	}
 	&__socials {
+		display: flex;
+		flex-wrap: wrap;
 		@include align();
 		margin: auto;
 		font-size: 2.5rem;
@@ -1362,5 +1375,5 @@ body {
 	background-clip: content-box;
 	padding: 2px;
 	color: #fff;
-	opacity: 1;
+	opacity: 1 ;
 }

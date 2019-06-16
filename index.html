@@ -19,11 +19,11 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<navbar class="navbar row">
+			<nav class="navbar row">
 				<a href="#" class="navbar__logo col-12 col-md-3">
 					<img src="img/header/logo.png" alt="logo" class="navbar__l-img">
 				</a>
-				<ul class="navbar__nav row col-12 col-md-5 col-lg-6 col-xl-5">
+				<ul class="navbar__nav col-12 col-md-5 col-lg-6 col-xl-5">
 					<li>
 						<a href="#about" class="navbar__link">О НАС</a>
 					</li>
@@ -37,11 +37,11 @@
 						<a href="#contacts" class="navbar__link">КОНТАКТЫ</a>
 					</li>
 				</ul>
-				<div class="navbar__choose row col-12 col-md-2">
+				<div class="navbar__choose col-12 col-md-2">
 						<a href="#" class="navbar__link">CZ</a>
 						<a href="#" class="navbar__link"><i class="fas fa-search"></i></a>
 				</div>
-			</navbar>
+			</nav>
 			<div class="header__main row">
 				<div class="col-lg-2 d-none d-lg-block scroll-block">
 					<div class="scroll">
@@ -129,10 +129,19 @@
 						<p class="about__text text col-12 col-md-10 col-xl-8">Программа развивает универсальные навыки, полезные для каждого</p>
 					</div>
 					<div class="about__extensions row">
-						<div class="about__extension col-12 col-lg-8 row">
-							<p class="about__e-text col-12 col-lg-6">Развитие</br> эмоций и чувств</p>
-							<p class="about__e-text col-12 col-lg-6">Развитие интеллекта</p>
-							<p class="about__e-text col-12 col-lg-6">Исследовательское поведение</p>
+						<div class="about__extension col-12 col-lg-8">
+                            <div class="about__e-text col-12 col-lg-6">
+                                <img src="img/about/heart.png" alt="">
+							    <p>Развитие</br> эмоций и чувств</p>
+                            </div>
+                            <div class="about__e-text col-12 col-lg-6">
+                                <img src="img/about/mozg.png" alt="">
+							    <p>Развитие интеллекта</p>
+                            </div>
+                            <div class="about__e-text col-12 col-lg-6">
+                                <img src="img/about/arm.png" alt="">
+							    <p>Исследовательское поведение</p>
+                            </div>
 						</div>
 						<div class="about__image col-lg-4 col-md-12 d-none d-md-block">
 							<img src="img/about/children.png" alt="children" class="about__img"></div>
@@ -146,7 +155,7 @@
 					<h2 class="why__title title">Почему Мы?</h2>
 				</div>
 				<div class="why__descriptions row">
-					<div class="why__descriptions row col-md-12 col-xl-7">
+					<div class="why__descriptions col-md-12 col-xl-7">
 						<div class="col-12 col-md-6">
 								<div class="why__description why__description--purp block">
 									<div class="row">
@@ -180,7 +189,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="why__stat row col-md-12 col-lg-12 col-xl-5">
+					<div class="why__stat col-md-12 col-lg-12 col-xl-5">
 						<div class="col-12">
 							<div class="block why__image">
 								<img src="img/why-we/boy.png" alt="boy" class="why__img"></div>
@@ -207,7 +216,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section__study">
+		<section class="study">
 			<div class="container">
 				<div class="row">
 					<h2 class="title study__title">ЧТО УЧАТ НАШИ ДЕТИ?</h2>
@@ -275,7 +284,7 @@
 						<p class="study__s-text">Полный контроль для родителей</p>
 						<div class="study__wrap study__wrap--second row">
 							<p class="study__block-text">Электронный дневник + мобильная версия</p>
-							<div class="col-6 col-md-4 study__s-wrap row">
+							<div class="col-6 col-md-4 study__s-wrap">
 								<img src="img/study/diary.png" alt="diary" class="study__img">
 								<img src="img/study/smartphone.png" alt="smartphone" class="study__img">
 							</div>
@@ -283,7 +292,7 @@
 						<div class="study__wrap study__wrap--third row">
 							<p class="study__block-text">Дети за хорошие оценки могут покупать себе подарки:</p>
 							<p class="study__s-text">наушники, мышки, клавиатуры, флешки, спиннеры, селфи-палки, футболки и другие полезные вещи</p>
-							<div class="col-8 col-md-6 col-lg-4 study__s-wrap row">
+							<div class="col-8 col-md-10 col-lg-5 col-xl-5 study__s-wrap">
 								<img src="img/study/b-gift.png" alt="diary" class="study__img">
 								<img src="img/study/m-gift.png" alt="smartphone" class="study__img">
 								<img src="img/study/s-gift.png" alt="smartphone" class="study__img">
@@ -330,7 +339,7 @@
 				<div class="row">
 					<h2 class="title promo__title">ФОРМЫ ОБУЧЕНИЯ</h2>
 				</div>
-				<div class="row promo__offer ">
+				<div class="row promo">
 					<div class="col-lg-2 d-none d-lg-block">
 						<img src="img/edu-forms/robo-cat-fly.png" alt="robo-cat-fly" class="promo__img">
 					</div>
@@ -338,10 +347,10 @@
 						<div class="block promo__block promo__block--big">
 							<h3 class="promo__s-title">Занятия по выходным</h3>
 							<p class="promo__s-text">Обучение по выходным для ребенка пролетает незаметно и освобождает три часа в расписании родителей в субботу или воскресенье</p>
-							<div class="promo__wrap row">
+							<div class="promo__wrap">
 								<p class="promo__block-text">от 10 до 14 лет</p>
 							</div>
-							<div class="promo__wrap row">
+							<div class="promo__wrap">
 								<div class="row">
 									<p class="promo__block-text">4 академических часа в день</p>
 									<p class="promo__s-text">1 раз в неделю </p>
@@ -357,7 +366,7 @@
 									</div>
 								</div>
 						</div>
-						<div class="promo__wrap row">
+						<div class="promo__wrap">
 							<p class="promo__block-text">от 1185 ₴ в месяц</p>
 						</div>
 						<a href="#" class="promo__btn btn">записаться</a>
@@ -367,10 +376,10 @@
 						<div class="block promo__block">
 							<h3 class="promo__s-title">Занятия по будням</h3>
 							<p class="promo__s-text">Занятия по будням позволяют равномерно распределить учебную нагрузку по неделе и чаще встречаться с любимыми преподавателями</p>
-							<div class="promo__wrap row">
+							<div class="promo__wrap">
 								<p class="promo__block-text">от 8 до 14 лет</p>
 							</div>
-							<div class="promo__wrap row">
+							<div class="promo__wrap">
 								<div class="row">
 									<p class="promo__block-text">2 академических часа в день</p>
 									<p class="promo__s-text">3 раза в неделю </p>
@@ -390,7 +399,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="promo__wrap row">
+							<div class="promo__wrap">
 								<p class="promo__block-text">от 1070 ₴ в месяц</p>
 							</div>
 							<a href="#" class="promo__btn btn">записаться</a>
@@ -405,11 +414,11 @@
 						<div class="block promo__block promo__block--teachers">
 							<h3 class="promo__s-title promo__s-title--teachers">Ян Ковальски</h3>
 							<p class="promo__s-text promo__s-text--teachers">Преподаватель по програмированию</p>
-							<div class="promo__wrap promo__wrap--teachers row">
+							<div class="promo__wrap promo__wrap--teachers">
 								<p class="promo__block-text">Опыт работы в педагогике</p>
 								<p class="promo__s-text promo__s-text--teachers">8 лет</p>
 							</div>
-							<div class="promo__wrap promo__wrap--teachers row">
+							<div class="promo__wrap promo__wrap--teachers">
 								<p class="promo__block-text">Опыт работы в IT</p>
 								<p class="promo__s-text promo__s-text--teachers">Руководил детскими проектами</p>
 							</div>
@@ -425,11 +434,11 @@
 						<div class="block promo__block promo__block--teachers">
 							<h3 class="promo__s-title promo__s-title--kate promo__s-title--teachers">Катя Янишевская</h3>
 							<p class="promo__s-text promo__s-text--teachers">Преподаватель по графике и логике у детей</p>
-							<div class="promo__wrap promo__wrap--teachers row">
+							<div class="promo__wrap promo__wrap--teachers">
 								<p class="promo__block-text">Опыт работы в педагогике</p>
 								<p class="promo__s-text promo__s-text--teachers">8 лет</p>
 							</div>
-							<div class="promo__wrap promo__wrap--teachers row">
+							<div class="promo__wrap promo__wrap--teachers">
 								<p class="promo__block-text">Опыт работы в IT</p>
 								<p class="promo__s-text promo__s-text--teachers">Ведет театральную школу и меняльную арифметику</p>
 							</div>
@@ -465,7 +474,7 @@
 					<div class="reviews__wrap col-lg-6 d-none d-md-block">
 						<img src="img/reviews/img-reviews.png" alt="peoples" class="reviews__img">
 					</div>
-					<form action="#" id = "form" name="form" method="get" class="form col-md-12 col-lg-4 row">
+					<form action="#" id = "form" name="form" method="get" class="form col-md-12 col-lg-4">
 						<h2 class="form__title">Заполните форму и получите бесплатную консультацию</h2>
 						<input type="name" class="form__name form__input" required>
 						<input type="tel" class="form__tel form__input" required>
@@ -501,13 +510,13 @@
 								<h5>ПРИЕМНАЯ КОМИСИЯ</h5>
 								<p>Пн-Пт 9:00 - 20:00 <br>
 								Сб и Вс 9:00 - 16:30</p>
-								<tel>+38 (050) 231 13 33</tel>
+								<a href="tel:+380502311333">+38 (050) 231 13 33</a>
 							</div>
 							<div class="contacts__wrap contacts__wrap--books">
 								<h5>учебная часть</h5>
 								<p>Пн-Пт 9:00 - 20:00 <br>
 								Сб и Вс 9:00 - 16:30</p>
-								<tel>+38 (050) 231 13 33</tel>
+								<a href="tel:+380502311333">+38 (050) 231 13 33</a>
 							</div>
 						</div>
 					</div>
@@ -518,13 +527,13 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__contacts row">
-				<div class="footer__tel row col-6 col-md-3 col-lg-2">
-					<tel>+48 22 161 14 73</tel>
-					<tel>+48 79 662 71 84</tel>
+				<div class="footer__tel col-6 col-md-3 col-lg-2">
+                    <a href="tel:+48221611473">+48 22 161 14 73</a>
+					<a href="tel:+48796627184">+48 79 662 71 84</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="footer__socials col-6 col-md-3 col-lg-2 row">
+				<div class="footer__socials col-6 col-md-3 col-lg-2">
 					<a href="#" class="footer__link">
 						<i class="fab fa-facebook"></i>
 					</a>
