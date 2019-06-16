@@ -1220,7 +1220,7 @@ body {
     
     input[type='range'] {
         @include myPos;
-        width: 50px;
+        width: 35px;
         height: 10px;
         -webkit-appearance: none;
         background-color: rgba(255, 255, 255, .3);
@@ -1241,9 +1241,8 @@ body {
         height: 10px;
         border-radius: 5px;
         cursor: pointer;
-        box-shadow: -10px 0 0 10px rgba(255, 255, 255, .5);
+		background-color: #fff;
         position: relative;
-        top:-10px;
     }
     
     input[type="range"]::-moz-range-progress {
